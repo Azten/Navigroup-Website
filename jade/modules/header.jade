@@ -1,0 +1,51 @@
+nav.header.md-header.minimized.dark(data-pages='header')
+      .container.relative
+        // BEGIN LEFT CONTENT
+        .pull-left
+          // .header-inner Allows to vertically Align elements to the Center
+          .header-inner
+            // BEGIN LOGO
+            img(src='assets/images/logo_white.png', width='152', height='21', data-src-retina='assets/images/logo_white_2x.png', alt='')
+        // BEGIN HEADER TOGGLE FOR MOBILE & TABLET
+        .pull-right
+          .header-inner
+            .visible-sm-inline.visible-xs-inline.menu-toggler.pull-right.p-l-10(data-pages='header-toggle', data-pages-element='#header')
+              .one
+              .two
+              .three
+        // END HEADER TOGGLE FOR MOBILE & TABLET
+        // BEGIN RIGHT CONTENT
+        #header.pull-right.menu-content.clearfix(data-pages='menu-content', data-pages-direction='slideRight')
+          // BEGIN HEADER CLOSE TOGGLE FOR MOBILE
+          .pull-right
+            a.text-black.link.padding-10.visible-xs-inline.visible-sm-inline.pull-right.m-t-10.m-b-10.m-r-10(href='#', data-pages='header-toggle', data-pages-element='#header')
+              i.pg-close_line
+          // END HEADER CLOSE TOGGLE FOR MOBILE
+          // BEGIN MENU ITEMS
+          .header-inner
+            ul.menu
+              li
+                a.active(href='index.html', data-text='Home') Home 
+              li.classic
+                a(href='javascript:;', data-text='Elements')
+                  | Vivi 
+                  i.pg-arrow_minimize.m-l-5
+                nav.classic
+                  span.arrow
+                  ul
+                    li
+                      a(href='http://pages.revox.io/dashboard/latest/html/color.html', target='_blank') Features
+                    li
+                      a(href='http://pages.revox.io/dashboard/latest/html/icons.html', target='_blank') The UI
+                    li
+                      a(href='http://pages.revox.io/dashboard/latest/html/typography.html', target='_blank') Hardware Specs
+                    li
+                      a(href='http://pages.revox.io/dashboard/latest/html/typography.html', target='_blank') How It Works  
+              li
+                a(href='theapp.html', data-text='The App') The App
+              li
+                a(href='aboutus.html', data-text='About Us') About Us
+              li
+                a(href='contact.html', data-text='Contact') Contact
+          // END MENU ITEMS
+    // END HEADER

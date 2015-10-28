@@ -1,0 +1,66 @@
+extends ../layout/shell
+
+block content
+  section.container.container-fixed-lg.p-t-100.p-b-100.sm-p-b-30.sm-m-b-30
+      .row
+        .col-md-6
+          h2 How can we assist you?
+          .p-r-40.sm-p-r-0
+            p
+              | Despite the UI, We thought of the User experience, With attached From Layouts you can simply categories Important fields and prioritize them.
+            br
+            br
+            p.semi-bold.no-margin Fill up this form to contact us if you have any futher questions
+            form.m-t-15(role='form')
+              .row
+                .col-sm-6
+                  .form-group.form-group-default
+                    label First name
+                    input.form-control(type='text')
+                .col-sm-6
+                  .form-group.form-group-default
+                    label Last name
+                    input.form-control(type='text')
+              .form-group.form-group-default
+                label Email
+                input.form-control(type='email', placeholder='This')
+              .form-group.form-group-default
+                label Message
+                textarea.form-control(placeholder='Type the message you wish to send', style='height:100px')
+              .sm-p-t-10.clearfix
+                p.pull-left.small.hint-text.m-t-5.font-arial I hereby certify that the information above is true and accurate. 
+                button.btn.btn-primary.font-montserrat.all-caps.fs-12.pull-right.xs-pull-left Submit
+              .clearfix
+        .col-md-6
+          .visible-xs.visible-sm.b-b.b-grey-light.m-t-35.m-b-30
+          .p-l-40.sm-p-l-0.sm-p-t-10
+            h3
+              | We are social
+            p
+              | Please feel free to follow us on the following media to get
+              | updates on the VIVI project as they become available.
+            
+            br
+            h5.block-title.hint-text.m-b-0 pages Public Inquiries & Communications 
+            br
+            .row
+              .col-sm-6
+                p.fs-12.font-montserrat.bold.all-caps.no-margin.hint-text Hotline 
+                p.hint-text.no-margin.fs-14 (877) 412-7766
+              .col-sm-6
+                p.fs-12.font-montserrat.bold.all-caps.no-margin.hint-text Email 
+                p.hint-text.no-margin.fs-14 support@revox.io
+                
+    section.p-b-100.p-t-100.bg-master-dark
+      .container
+        .row
+          .col-sm-8.col-sm-offset-2
+            h6.block-title.m-b-0.text-white.text-center Stay in touch
+            h1.text-white.text-center.m-t-5 Subscribe to our newsletter
+            p.small.hint-text.p-t-0.text-white.text-center
+              | We value your privacy. None of the details supplied will be shared with external parties
+            .form-group.form-group-default.input-group.m-t-40.bg-transparent.b-a.b-transparent-white
+              label Email Address
+              input.form-control.text-white(type='email', placeholder='Example@mailserver.com', style='')
+              span.input-group-btn
+                button.btn.btn-white.m-r-10.btn-cons(type='button') Subscribe!

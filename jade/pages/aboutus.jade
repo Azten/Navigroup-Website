@@ -1,0 +1,43 @@
+extends ../layout/shell
+
+mixin team-blob(imgSrc, name, role, para)
+  .row.m-t-20
+    .col-sm-3
+      img.img-circle.img-responsive.center-block(src=imgSrc)
+    .col-sm-9.text-justify
+      h5= name
+      h6.block-title= role
+      p= para
+
+block content
+    section.p-b-30.p-t-100(data-pages="parallax")
+      .container.text-center.inner
+        .row
+          .col-sm-8.col-sm-offset-2
+            h6.block-title.m-b-0 Discover
+            h1.m-t-5.light Our Story
+            p.m-t-20
+              | Our long standing vision has been to bypass the usual admin dashboard structure, and move forward with a more sophisticated yet simple framework that would create a credible impact on the many conventional dashboard users.
+            img.m-t-30(src='assets/images/arrow_down.png', alt='')
+              
+    section.p-b-60.p-t-70.bg-master-lightest
+          .container.text-center
+            .row
+              .col-sm-8.col-sm-offset-2
+                h6.block-title.m-b-0 Meet
+                h1.m-t-5.light Our Team
+            hr            
+            +team-blob('http://placehold.it/200x200', 'Joy Choi', 'Project Manager', 'Joy will head the overall mobile application development portion of the Navi project, while taking care to make sure that the rest of her group members are on point!')
+            +team-blob('http://placehold.it/200x200', 'Joy Choi', 'Project Manager', 'Joy will head the overall mobile application development portion of the Navi project, while taking care to make sure that the rest of her group members are on point!')
+            +team-blob('http://placehold.it/200x200', 'Joy Choi', 'Project Manager', 'Joy will head the overall mobile application development portion of the Navi project, while taking care to make sure that the rest of her group members are on point!')
+            +team-blob('http://placehold.it/200x200', 'Joy Choi', 'Project Manager', 'Joy will head the overall mobile application development portion of the Navi project, while taking care to make sure that the rest of her group members are on point!')
+            +team-blob('http://placehold.it/200x200', 'Joy Choi', 'Project Manager', 'Joy will head the overall mobile application development portion of the Navi project, while taking care to make sure that the rest of her group members are on point!')
+
+    section.p-b-60.p-t-70
+          .container.text-center
+            .row
+              .col-sm-8.col-sm-offset-2
+                h6.block-title.m-b-0 Meet
+                h1.m-t-5.light Our Adviser
+            hr            
+            +team-blob('http://placehold.it/200x200', 'Costas Armenakis', 'Project Manager', 'Costas Amer')
